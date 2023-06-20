@@ -37,5 +37,29 @@
       <button type="submit" class="btn btn-primary fs-4" (click)="saveEmpresas()">Cadastrar</button>
     </div>
   </div>
-
+  <div class="row">
+    <h1 class="fs-2 mb-4 mt-5 text-center">Lista de Empresas</h1>
+    <div class="col">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Área</th>
+            <th scope="col">Cidade</th>
+            <th scope="col">Contato</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let empresa of empresas">
+            <th scope="row">{{empresa.id}}</th>
+            <td>{{empresa.name}}</td>
+            <td>{{empresa.area}}</td>
+            <td>{{empresa.location}}</td>
+            <td>{{empresa.contact}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>

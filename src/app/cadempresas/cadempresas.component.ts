@@ -26,7 +26,16 @@ export class CadempresasComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.loadEmpresas();
+  }
+
+  loadEmpresas(){
+    this.empresaServices.getEmpresas().subscribe(
+      {
+        next : data => this.empresas = data,
+        error : () => console.log("Erro ao chamar o endpoint")
+      }
+    );
   }
 
   saveEmpresas(){
