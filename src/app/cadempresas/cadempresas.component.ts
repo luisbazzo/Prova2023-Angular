@@ -49,6 +49,14 @@ export class CadempresasComponent implements OnInit{
     );
   }
 
+  removeEmpresas(empresa : Empresas): void{
+    this.empresaServices.removeEmpresas(empresa).subscribe(
+      {
+        next : () => this.loadEmpresas()
+      }
+    );
+  }
+
 
 
 }

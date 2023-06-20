@@ -19,4 +19,8 @@ export class CadempresasService {
   saveEmpresas(empresa : Empresas): Observable<Empresas>{
     return this.http.post<Empresas>(this.url, empresa);
   }
+
+  removeEmpresas(empresa : Empresas): Observable<void>{
+    return this.http.delete<void>(`${this.url}/${empresa.id}`);
+  }
 }

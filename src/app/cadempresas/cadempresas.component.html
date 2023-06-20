@@ -48,6 +48,7 @@
             <th scope="col">Área</th>
             <th scope="col">Cidade</th>
             <th scope="col">Contato</th>
+            <th class="d-flex ms-2" scope="col">Opção</th>
           </tr>
         </thead>
         <tbody>
@@ -57,6 +58,7 @@
             <td>{{empresa.area}}</td>
             <td>{{empresa.location}}</td>
             <td>{{empresa.contact}}</td>
+            <td><button class="btn btn-danger" (click)="removeEmpresas(empresa)">Remover</button></td>
           </tr>
         </tbody>
       </table>
