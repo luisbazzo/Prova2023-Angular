@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <h1 class="fs-2 mb-5 mt-5 text-center">Cadastro de Empresas</h1>
+    <div class="col">
+      <form [formGroup]="formGroupEmpresas">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nome da empresa:</label>
+          <input type="text" class="form-control" id="name" aria-describedby="Nome" formControlName="name">
+        </div>
+        <div class="mb-3">
+          <label for="contact" class="form-label">Email da empresa:</label>
+          <input type="email" class="form-control" id="contact" aria-describedby="Email" formControlName="contact">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <form [formGroup]="formGroupEmpresas">
+        <div class="mb-3">
+          <label for="location" class="form-label">Cidade da sede:</label>
+          <input type="text" class="form-control" id="location" aria-describedby="Cidade" formControlName="location">
+        </div>
+      </form>
+    </div>
+    <div class="col">
+      <form [formGroup]="formGroupEmpresas">
+        <div class="mb-3">
+          <label for="area" class="form-label">Área de atuação:</label>
+          <input type="text" class="form-control" id="area" formControlName="area">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row text-center mt-4">
+    <div class="col">
+      <button type="submit" class="btn btn-primary fs-4" (click)="saveEmpresas()">Cadastrar</button>
+    </div>
+  </div>
+
+</div>

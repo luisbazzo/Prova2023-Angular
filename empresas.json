@@ -1,0 +1,25 @@
+{
+  "empresas": [
+    {
+      "id": 1,
+      "name": "Abutua",
+      "contact": "contato@abutua.com.br",
+      "location": "Sorocaba",
+      "area": "Tecnologia"
+    },
+    {
+      "id": 2,
+      "name": "Adidas Brasil",
+      "contact": "contato@adidas.com.br",
+      "location": "São Paulo",
+      "area": "Roupas e Esporte"
+    },
+    {
+      "id": 3,
+      "name": "Nike",
+      "contact": "contato@nike.com.br",
+      "location": "São Paulo",
+      "area": "Esportes"
+    }
+  ]
+}
